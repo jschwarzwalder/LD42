@@ -11,8 +11,8 @@ public class Item : MonoBehaviour
     [SerializeField] int value;
     [SerializeField] string description;
     [SerializeField] ItemSet SetName;
-
-
+    
+    public bool InInventory { get; set; }
 
 
     // Use this for initialization
@@ -51,5 +51,12 @@ public class Item : MonoBehaviour
     }
 
 
+    private void OnMouseDown () {
+        if (!InInventory) {
+            GameObject cursorObj = GameObject.FindGameObjectWithTag("Cursor");
+            cursorObj.GetComponent<Cursor>().SelectedItem = this;
+            GetComponent<Collider2D>().enabled = false;
+        }
+    }
 
 }
