@@ -21,6 +21,7 @@ GameObject:
   - component: {fileID: 4656376372742256}
   - component: {fileID: 114652409290692294}
   - component: {fileID: 212834699638084358}
+  - component: {fileID: 61406663758619216}
   m_Layer: 8
   m_Name: Special_Book 1
   m_TagString: Item
@@ -41,6 +42,31 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!61 &61406663758619216
+BoxCollider2D:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1730865129462856}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 0.32, y: 0.32}
+    newSize: {x: 0.32, y: 0.32}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 0.32, y: 0.32}
+  m_EdgeRadius: 0
 --- !u!114 &114652409290692294
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -52,9 +78,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d7a86c8b234299540be3d073c5ab7f2f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  itemName: Spells v42
+  itemName: Book of Spells v 42
   value: 2
-  description: Contains all the answers
+  description: Contains all the answers to life, universe, and everything
   SetName: 6
 --- !u!212 &212834699638084358
 SpriteRenderer:
