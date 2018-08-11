@@ -2,7 +2,8 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Item : MonoBehaviour {
+public class Item : MonoBehaviour
+{
 
     public enum ItemSet { Wizard, Ranged, Warrior }
 
@@ -11,26 +12,28 @@ public class Item : MonoBehaviour {
     [SerializeField] string description;
     [SerializeField] private ItemSet? SetName;
 
-    
+
 
 
     // Use this for initialization
-    void Start () {
+    void Start()
+    {
 
-       
-		
-	}
-	
-	// Update is called once per frame
-	void Update () {
-		
-	}
+
+
+    }
+
+    // Update is called once per frame
+    void Update()
+    {
+
+    }
 
     public int getValue()
     {
         return value;
     }
-    
+
     public bool isInSet()
     {
         return SetName != null;
@@ -40,5 +43,7 @@ public class Item : MonoBehaviour {
     {
         return SetName;
     }
+
+
 
 }
