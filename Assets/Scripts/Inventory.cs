@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Arrays : MonoBehaviour
+public class Inventory : MonoBehaviour
 {
 
     private Item[] Items;
