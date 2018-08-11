@@ -29,7 +29,6 @@ public class ItemSlot : MonoBehaviour {
 	}
 
     private void OnMouseDown () {
-        Debug.Log(SlotItem);
         if (SlotItem == null) {
             GameObject cursorObj = GameObject.FindGameObjectWithTag("Cursor");
             Cursor cursor = cursorObj.GetComponent<Cursor>();
