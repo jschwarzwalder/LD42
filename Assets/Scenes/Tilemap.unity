@@ -121,9 +121,9 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 802095}
-  m_Layer: 0
-  m_Name: Soldier Set
-  m_TagString: Item
+  m_Layer: 8
+  m_Name: Warrior Set
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -152,8 +152,9 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6266509}
+  - component: {fileID: 6266511}
   - component: {fileID: 6266510}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: spear
   m_TagString: Item
   m_Icon: {fileID: 0}
@@ -219,6 +220,21 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &6266511
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 6266508}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d7a86c8b234299540be3d073c5ab7f2f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemName: 
+  value: 1
+  description: 
+  SetName: 5
 --- !u!1 &30905068
 GameObject:
   m_ObjectHideFlags: 0
@@ -227,9 +243,9 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 30905069}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Ranged Weapons
-  m_TagString: Item
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -260,8 +276,9 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 32133239}
+  - component: {fileID: 32133241}
   - component: {fileID: 32133240}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: urand_piercer_new
   m_TagString: Item
   m_Icon: {fileID: 0}
@@ -327,6 +344,21 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &32133241
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 32133238}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d7a86c8b234299540be3d073c5ab7f2f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemName: Bow
+  value: 1
+  description: Requires Arrows to Sell
+  SetName: 2
 --- !u!1 &64777756
 GameObject:
   m_ObjectHideFlags: 0
@@ -443,8 +475,9 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 89657887}
+  - component: {fileID: 89657889}
   - component: {fileID: 89657888}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: scimitar_1_new
   m_TagString: Item
   m_Icon: {fileID: 0}
@@ -510,6 +543,21 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &89657889
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 89657886}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d7a86c8b234299540be3d073c5ab7f2f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemName: 
+  value: 1
+  description: 
+  SetName: 0
 --- !u!1 &107187997
 GameObject:
   m_ObjectHideFlags: 0
@@ -518,9 +566,9 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 107187998}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Weapons
-  m_TagString: Item
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -561,8 +609,9 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 115278499}
+  - component: {fileID: 115278501}
   - component: {fileID: 115278500}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: boots_4_green
   m_TagString: Item
   m_Icon: {fileID: 0}
@@ -628,6 +677,21 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &115278501
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 115278498}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d7a86c8b234299540be3d073c5ab7f2f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemName: 
+  value: 1
+  description: 
+  SetName: 0
 --- !u!1 &159313373
 GameObject:
   m_ObjectHideFlags: 0
@@ -636,8 +700,9 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 159313374}
+  - component: {fileID: 159313376}
   - component: {fileID: 159313375}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: spiked_flail_3
   m_TagString: Item
   m_Icon: {fileID: 0}
@@ -703,6 +768,21 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &159313376
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 159313373}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d7a86c8b234299540be3d073c5ab7f2f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemName: 
+  value: 1
+  description: 
+  SetName: 0
 --- !u!1 &164030916
 GameObject:
   m_ObjectHideFlags: 0
@@ -711,8 +791,9 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 164030917}
+  - component: {fileID: 164030919}
   - component: {fileID: 164030918}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: hat_2
   m_TagString: Item
   m_Icon: {fileID: 0}
@@ -778,6 +859,21 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &164030919
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 164030916}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d7a86c8b234299540be3d073c5ab7f2f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemName: Wizard's Hat
+  value: 1
+  description: Worth 2, if collect all Wizard items
+  SetName: 1
 --- !u!1 &187519024
 GameObject:
   m_ObjectHideFlags: 0
@@ -786,8 +882,9 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 187519025}
+  - component: {fileID: 187519027}
   - component: {fileID: 187519026}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: urand_krishna_new
   m_TagString: Item
   m_Icon: {fileID: 0}
@@ -853,6 +950,21 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &187519027
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 187519024}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d7a86c8b234299540be3d073c5ab7f2f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemName: Bow
+  value: 1
+  description: Requires Arrows to Sell
+  SetName: 2
 --- !u!1 &270915072
 GameObject:
   m_ObjectHideFlags: 0
@@ -861,8 +973,9 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 270915073}
+  - component: {fileID: 270915075}
   - component: {fileID: 270915074}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: cap_2
   m_TagString: Item
   m_Icon: {fileID: 0}
@@ -928,6 +1041,21 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &270915075
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 270915072}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d7a86c8b234299540be3d073c5ab7f2f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemName: 
+  value: 1
+  description: 
+  SetName: 0
 --- !u!1 &325727419
 GameObject:
   m_ObjectHideFlags: 0
@@ -936,8 +1064,9 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 325727420}
+  - component: {fileID: 325727422}
   - component: {fileID: 325727421}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: turquoise_new
   m_TagString: Item
   m_Icon: {fileID: 0}
@@ -1003,6 +1132,21 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &325727422
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 325727419}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d7a86c8b234299540be3d073c5ab7f2f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemName: 
+  value: 1
+  description: 
+  SetName: 0
 --- !u!1 &342332964
 GameObject:
   m_ObjectHideFlags: 0
@@ -1011,8 +1155,9 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 342332965}
+  - component: {fileID: 342332967}
   - component: {fileID: 342332966}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: robe_1_new
   m_TagString: Item
   m_Icon: {fileID: 0}
@@ -1078,6 +1223,21 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &342332967
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 342332964}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d7a86c8b234299540be3d073c5ab7f2f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemName: 
+  value: 1
+  description: 
+  SetName: 0
 --- !u!1 &372852818
 GameObject:
   m_ObjectHideFlags: 0
@@ -1086,8 +1246,9 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 372852819}
+  - component: {fileID: 372852821}
   - component: {fileID: 372852820}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: ring_gold_white
   m_TagString: Item
   m_Icon: {fileID: 0}
@@ -1153,6 +1314,21 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &372852821
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 372852818}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d7a86c8b234299540be3d073c5ab7f2f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemName: Ring
+  value: 1
+  description: 
+  SetName: 4
 --- !u!1 &429851027
 GameObject:
   m_ObjectHideFlags: 0
@@ -1161,8 +1337,9 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 429851028}
+  - component: {fileID: 429851030}
   - component: {fileID: 429851029}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: boots_1_brown_new
   m_TagString: Item
   m_Icon: {fileID: 0}
@@ -1228,6 +1405,21 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &429851030
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 429851027}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d7a86c8b234299540be3d073c5ab7f2f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemName: 
+  value: 1
+  description: 
+  SetName: 0
 --- !u!1 &431779242
 GameObject:
   m_ObjectHideFlags: 0
@@ -1236,8 +1428,9 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 431779243}
+  - component: {fileID: 431779245}
   - component: {fileID: 431779244}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: magenta_new
   m_TagString: Item
   m_Icon: {fileID: 0}
@@ -1303,6 +1496,21 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &431779245
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 431779242}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d7a86c8b234299540be3d073c5ab7f2f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemName: 
+  value: 1
+  description: 
+  SetName: 0
 --- !u!1 &433392115
 GameObject:
   m_ObjectHideFlags: 0
@@ -1311,8 +1519,9 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 433392116}
+  - component: {fileID: 433392118}
   - component: {fileID: 433392117}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: misc_book
   m_TagString: Item
   m_Icon: {fileID: 0}
@@ -1378,6 +1587,21 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &433392118
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 433392115}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d7a86c8b234299540be3d073c5ab7f2f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemName: Spells v42
+  value: 2
+  description: Contains all the answers
+  SetName: 6
 --- !u!1 &497340046
 GameObject:
   m_ObjectHideFlags: 0
@@ -1386,8 +1610,9 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 497340047}
+  - component: {fileID: 497340049}
   - component: {fileID: 497340048}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: robe_ego_2
   m_TagString: Item
   m_Icon: {fileID: 0}
@@ -1453,6 +1678,21 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &497340049
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 497340046}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d7a86c8b234299540be3d073c5ab7f2f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemName: Wizard's Robe
+  value: 1
+  description: Worth 2, if collect all Wizard items
+  SetName: 1
 --- !u!1 &520140928
 GameObject:
   m_ObjectHideFlags: 0
@@ -1461,8 +1701,9 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 520140929}
+  - component: {fileID: 520140931}
   - component: {fileID: 520140930}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: dark_green_new
   m_TagString: Item
   m_Icon: {fileID: 0}
@@ -1528,6 +1769,21 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &520140931
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 520140928}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d7a86c8b234299540be3d073c5ab7f2f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemName: 
+  value: 1
+  description: 
+  SetName: 0
 --- !u!1 &556017303
 GameObject:
   m_ObjectHideFlags: 0
@@ -1536,8 +1792,9 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 556017304}
+  - component: {fileID: 556017306}
   - component: {fileID: 556017305}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: ruby_old
   m_TagString: Item
   m_Icon: {fileID: 0}
@@ -1603,6 +1860,21 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &556017306
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 556017303}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d7a86c8b234299540be3d073c5ab7f2f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemName: 
+  value: 1
+  description: 
+  SetName: 0
 --- !u!1 &642298327
 GameObject:
   m_ObjectHideFlags: 0
@@ -1611,8 +1883,9 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 642298328}
+  - component: {fileID: 642298330}
   - component: {fileID: 642298329}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: cloak_4
   m_TagString: Item
   m_Icon: {fileID: 0}
@@ -1678,6 +1951,21 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &642298330
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 642298327}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d7a86c8b234299540be3d073c5ab7f2f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemName: 
+  value: 1
+  description: 
+  SetName: 0
 --- !u!1 &643166288
 GameObject:
   m_ObjectHideFlags: 0
@@ -1686,9 +1974,10 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 643166289}
+  - component: {fileID: 643166291}
   - component: {fileID: 643166290}
-  m_Layer: 0
-  m_Name: DESTROY
+  m_Layer: 8
+  m_Name: DestroyItem
   m_TagString: Item
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1753,6 +2042,21 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &643166291
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 643166288}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d7a86c8b234299540be3d073c5ab7f2f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemName: Book of Death
+  value: 1
+  description: Destroys item in Inventory
+  SetName: 0
 --- !u!1 &651700997
 GameObject:
   m_ObjectHideFlags: 0
@@ -1761,9 +2065,9 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 651700998}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Gear
-  m_TagString: Item
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1805,8 +2109,9 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 660244797}
+  - component: {fileID: 660244799}
   - component: {fileID: 660244798}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: scroll_old
   m_TagString: Item
   m_Icon: {fileID: 0}
@@ -1872,6 +2177,21 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &660244799
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 660244796}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d7a86c8b234299540be3d073c5ab7f2f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemName: 
+  value: 1
+  description: 
+  SetName: 0
 --- !u!1 &710577517
 GameObject:
   m_ObjectHideFlags: 0
@@ -1880,8 +2200,9 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 710577518}
+  - component: {fileID: 710577520}
   - component: {fileID: 710577519}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: greatsword_3_new
   m_TagString: Item
   m_Icon: {fileID: 0}
@@ -1947,6 +2268,21 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &710577520
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 710577517}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d7a86c8b234299540be3d073c5ab7f2f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemName: 
+  value: 1
+  description: 
+  SetName: 5
 --- !u!1 &720883762
 GameObject:
   m_ObjectHideFlags: 0
@@ -1956,9 +2292,10 @@ GameObject:
   m_Component:
   - component: {fileID: 720883763}
   - component: {fileID: 720883764}
-  m_Layer: 0
+  - component: {fileID: 720883765}
+  m_Layer: 8
   m_Name: leather_armor_3
-  m_TagString: Untagged
+  m_TagString: Item
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2022,6 +2359,21 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &720883765
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 720883762}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d7a86c8b234299540be3d073c5ab7f2f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemName: Warrior's Armor
+  value: 0
+  description: Worth 5 if collect all Warrior items
+  SetName: 3
 --- !u!1 &751581454
 GameObject:
   m_ObjectHideFlags: 0
@@ -2030,8 +2382,9 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 751581455}
+  - component: {fileID: 751581457}
   - component: {fileID: 751581456}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: bread_ration_new
   m_TagString: Item
   m_Icon: {fileID: 0}
@@ -2097,6 +2450,21 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &751581457
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 751581454}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d7a86c8b234299540be3d073c5ab7f2f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemName: Bread
+  value: 1
+  description: Squishy
+  SetName: 4
 --- !u!1 &765787446
 GameObject:
   m_ObjectHideFlags: 0
@@ -2105,8 +2473,9 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 765787447}
+  - component: {fileID: 765787449}
   - component: {fileID: 765787448}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: orcish_arrow
   m_TagString: Item
   m_Icon: {fileID: 0}
@@ -2172,6 +2541,21 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &765787449
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 765787446}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d7a86c8b234299540be3d073c5ab7f2f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemName: Arriow
+  value: 1
+  description: Requires Bow to Sell
+  SetName: 2
 --- !u!1 &766412688
 GameObject:
   m_ObjectHideFlags: 0
@@ -2180,8 +2564,9 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 766412689}
+  - component: {fileID: 766412691}
   - component: {fileID: 766412690}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: morningstar_2_new
   m_TagString: Item
   m_Icon: {fileID: 0}
@@ -2247,6 +2632,21 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &766412691
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 766412688}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d7a86c8b234299540be3d073c5ab7f2f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemName: 
+  value: 1
+  description: 
+  SetName: 0
 --- !u!1 &773660957
 GameObject:
   m_ObjectHideFlags: 0
@@ -2332,8 +2732,9 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 782333925}
+  - component: {fileID: 782333927}
   - component: {fileID: 782333926}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: cloak_2
   m_TagString: Item
   m_Icon: {fileID: 0}
@@ -2399,6 +2800,21 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &782333927
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 782333924}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d7a86c8b234299540be3d073c5ab7f2f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemName: 
+  value: 1
+  description: 
+  SetName: 0
 --- !u!1 &802466612
 GameObject:
   m_ObjectHideFlags: 0
@@ -2407,9 +2823,9 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 802466613}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Fragile
-  m_TagString: Item
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2437,8 +2853,9 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 809606371}
+  - component: {fileID: 809606373}
   - component: {fileID: 809606372}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: hand_axe_1_new
   m_TagString: Item
   m_Icon: {fileID: 0}
@@ -2504,6 +2921,21 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &809606373
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 809606370}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d7a86c8b234299540be3d073c5ab7f2f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemName: 
+  value: 1
+  description: 
+  SetName: 0
 --- !u!1 &840092069
 GameObject:
   m_ObjectHideFlags: 0
@@ -2513,9 +2945,10 @@ GameObject:
   m_Component:
   - component: {fileID: 840092070}
   - component: {fileID: 840092071}
-  m_Layer: 0
+  - component: {fileID: 840092072}
+  m_Layer: 8
   m_Name: helmet_art_1
-  m_TagString: Untagged
+  m_TagString: Item
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2579,6 +3012,21 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &840092072
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 840092069}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d7a86c8b234299540be3d073c5ab7f2f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemName: Warrior's Helm
+  value: 0
+  description: Worth 5 if collect all Warrior items
+  SetName: 3
 --- !u!1 &855077664
 GameObject:
   m_ObjectHideFlags: 0
@@ -2628,8 +3076,9 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 893481432}
+  - component: {fileID: 893481434}
   - component: {fileID: 893481433}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: short_sword_1_new
   m_TagString: Item
   m_Icon: {fileID: 0}
@@ -2695,6 +3144,21 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &893481434
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 893481431}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d7a86c8b234299540be3d073c5ab7f2f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemName: 
+  value: 1
+  description: 
+  SetName: 0
 --- !u!1 &895796892
 GameObject:
   m_ObjectHideFlags: 0
@@ -2703,8 +3167,9 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 895796893}
+  - component: {fileID: 895796895}
   - component: {fileID: 895796894}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: urand_crystal_spear_new
   m_TagString: Item
   m_Icon: {fileID: 0}
@@ -2770,6 +3235,21 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &895796895
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 895796892}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d7a86c8b234299540be3d073c5ab7f2f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemName: 
+  value: 1
+  description: 
+  SetName: 5
 --- !u!1 &925887759
 GameObject:
   m_ObjectHideFlags: 0
@@ -2778,8 +3258,9 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 925887760}
+  - component: {fileID: 925887762}
   - component: {fileID: 925887761}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: giant_spiked_club_new
   m_TagString: Item
   m_Icon: {fileID: 0}
@@ -2845,6 +3326,21 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &925887762
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 925887759}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d7a86c8b234299540be3d073c5ab7f2f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemName: 
+  value: 1
+  description: 
+  SetName: 0
 --- !u!1 &963916088
 GameObject:
   m_ObjectHideFlags: 0
@@ -2853,8 +3349,9 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 963916089}
+  - component: {fileID: 963916091}
   - component: {fileID: 963916090}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: shield_3
   m_TagString: Item
   m_Icon: {fileID: 0}
@@ -2920,6 +3417,21 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &963916091
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 963916088}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d7a86c8b234299540be3d073c5ab7f2f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemName: Bronze Sheild
+  value: 1
+  description: Fresh from the Blacksmith
+  SetName: 0
 --- !u!1 &970941310
 GameObject:
   m_ObjectHideFlags: 0
@@ -2928,8 +3440,9 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 970941311}
+  - component: {fileID: 970941313}
   - component: {fileID: 970941312}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: gem_bronze_old
   m_TagString: Item
   m_Icon: {fileID: 0}
@@ -2995,6 +3508,21 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &970941313
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 970941310}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d7a86c8b234299540be3d073c5ab7f2f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemName: Wizard's Staff
+  value: 1
+  description: Worth 2, if collect all Wizard items
+  SetName: 1
 --- !u!1 &991875953
 GameObject:
   m_ObjectHideFlags: 0
@@ -3003,8 +3531,9 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 991875954}
+  - component: {fileID: 991875956}
   - component: {fileID: 991875955}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: long_sword_1_new
   m_TagString: Item
   m_Icon: {fileID: 0}
@@ -3070,6 +3599,21 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &991875956
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 991875953}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d7a86c8b234299540be3d073c5ab7f2f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemName: 
+  value: 1
+  description: 
+  SetName: 0
 --- !u!1 &1001099491
 GameObject:
   m_ObjectHideFlags: 0
@@ -3078,8 +3622,9 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1001099492}
+  - component: {fileID: 1001099494}
   - component: {fileID: 1001099493}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: gem_ivory_new
   m_TagString: Item
   m_Icon: {fileID: 0}
@@ -3145,6 +3690,21 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &1001099494
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1001099491}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d7a86c8b234299540be3d073c5ab7f2f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemName: 
+  value: 1
+  description: 
+  SetName: 0
 --- !u!1 &1016587770
 GameObject:
   m_ObjectHideFlags: 0
@@ -3153,8 +3713,9 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1016587771}
+  - component: {fileID: 1016587773}
   - component: {fileID: 1016587772}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: elven_arrow
   m_TagString: Item
   m_Icon: {fileID: 0}
@@ -3220,6 +3781,21 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &1016587773
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1016587770}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d7a86c8b234299540be3d073c5ab7f2f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemName: Arriow
+  value: 1
+  description: Requires Bow to Sell
+  SetName: 2
 --- !u!1 &1043237017
 GameObject:
   m_ObjectHideFlags: 0
@@ -3228,9 +3804,9 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1043237018}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Potions
-  m_TagString: Item
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3261,8 +3837,9 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1074870717}
+  - component: {fileID: 1074870719}
   - component: {fileID: 1074870718}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: beef_jerky_new
   m_TagString: Item
   m_Icon: {fileID: 0}
@@ -3328,6 +3905,21 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &1074870719
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1074870716}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d7a86c8b234299540be3d073c5ab7f2f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemName: 
+  value: 1
+  description: 
+  SetName: 0
 --- !u!1 &1086364292
 GameObject:
   m_ObjectHideFlags: 0
@@ -3336,8 +3928,9 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1086364293}
+  - component: {fileID: 1086364295}
   - component: {fileID: 1086364294}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: cyan_new
   m_TagString: Item
   m_Icon: {fileID: 0}
@@ -3403,6 +3996,21 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &1086364295
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1086364292}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d7a86c8b234299540be3d073c5ab7f2f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemName: 
+  value: 1
+  description: 
+  SetName: 4
 --- !u!1 &1195434336
 GameObject:
   m_ObjectHideFlags: 0
@@ -3411,8 +4019,9 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1195434337}
+  - component: {fileID: 1195434339}
   - component: {fileID: 1195434338}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: chain_mail_1
   m_TagString: Item
   m_Icon: {fileID: 0}
@@ -3478,6 +4087,21 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &1195434339
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1195434336}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d7a86c8b234299540be3d073c5ab7f2f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemName: Chainmail
+  value: 1
+  description: Arrows can't touch this.
+  SetName: 0
 --- !u!1 &1270797254
 GameObject:
   m_ObjectHideFlags: 0
@@ -3486,8 +4110,9 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1270797255}
+  - component: {fileID: 1270797257}
   - component: {fileID: 1270797256}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: buckler_1_new
   m_TagString: Item
   m_Icon: {fileID: 0}
@@ -3553,6 +4178,21 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &1270797257
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1270797254}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d7a86c8b234299540be3d073c5ab7f2f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemName: 
+  value: 1
+  description: 
+  SetName: 0
 --- !u!1 &1309561259
 GameObject:
   m_ObjectHideFlags: 0
@@ -3561,8 +4201,9 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1309561260}
+  - component: {fileID: 1309561262}
   - component: {fileID: 1309561261}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: scythe_2_new
   m_TagString: Item
   m_Icon: {fileID: 0}
@@ -3628,6 +4269,21 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &1309561262
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1309561259}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d7a86c8b234299540be3d073c5ab7f2f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemName: 
+  value: 1
+  description: 
+  SetName: 0
 --- !u!1 &1392768038
 GameObject:
   m_ObjectHideFlags: 0
@@ -3636,8 +4292,9 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1392768039}
+  - component: {fileID: 1392768041}
   - component: {fileID: 1392768040}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: white_new
   m_TagString: Item
   m_Icon: {fileID: 0}
@@ -3703,6 +4360,21 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &1392768041
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1392768038}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d7a86c8b234299540be3d073c5ab7f2f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemName: 
+  value: 1
+  description: 
+  SetName: 4
 --- !u!1 &1396253934
 GameObject:
   m_ObjectHideFlags: 0
@@ -3711,8 +4383,9 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1396253935}
+  - component: {fileID: 1396253937}
   - component: {fileID: 1396253936}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: staff_6
   m_TagString: Item
   m_Icon: {fileID: 0}
@@ -3778,6 +4451,21 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &1396253937
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1396253934}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d7a86c8b234299540be3d073c5ab7f2f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemName: 
+  value: 1
+  description: 
+  SetName: 0
 --- !u!1 &1436349959
 GameObject:
   m_ObjectHideFlags: 0
@@ -3786,8 +4474,9 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1436349960}
+  - component: {fileID: 1436349962}
   - component: {fileID: 1436349961}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: shield_2_old
   m_TagString: Item
   m_Icon: {fileID: 0}
@@ -3853,6 +4542,21 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &1436349962
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1436349959}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d7a86c8b234299540be3d073c5ab7f2f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemName: Training Sheild
+  value: 1
+  description: A little rough around the edges.
+  SetName: 0
 --- !u!1 &1449302819
 GameObject:
   m_ObjectHideFlags: 0
@@ -3861,8 +4565,9 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1449302820}
+  - component: {fileID: 1449302822}
   - component: {fileID: 1449302821}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: spwpn_staff_of_dispater_new
   m_TagString: Item
   m_Icon: {fileID: 0}
@@ -3928,6 +4633,21 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &1449302822
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1449302819}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d7a86c8b234299540be3d073c5ab7f2f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemName: 
+  value: 1
+  description: 
+  SetName: 0
 --- !u!1 &1490803750
 GameObject:
   m_ObjectHideFlags: 0
@@ -3936,9 +4656,9 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1490803751}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Wizard Set
-  m_TagString: Item
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3967,8 +4687,9 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1511353093}
+  - component: {fileID: 1511353095}
   - component: {fileID: 1511353094}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: urand_brooch_of_shielding_new
   m_TagString: Item
   m_Icon: {fileID: 0}
@@ -4034,6 +4755,21 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &1511353095
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1511353092}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d7a86c8b234299540be3d073c5ab7f2f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemName: Amulet
+  value: 2
+  description: 
+  SetName: 0
 --- !u!1 &1532504478
 GameObject:
   m_ObjectHideFlags: 0
@@ -4042,9 +4778,10 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1532504479}
+  - component: {fileID: 1532504481}
   - component: {fileID: 1532504480}
-  m_Layer: 0
-  m_Name: Sells
+  m_Layer: 8
+  m_Name: SellItem
   m_TagString: Item
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4109,6 +4846,21 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &1532504481
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1532504478}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d7a86c8b234299540be3d073c5ab7f2f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemName: Rules of Acquisition
+  value: 1
+  description: Sells Item in Inventory
+  SetName: 0
 --- !u!1 &1569121501
 GameObject:
   m_ObjectHideFlags: 0
@@ -4117,8 +4869,9 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1569121502}
+  - component: {fileID: 1569121504}
   - component: {fileID: 1569121503}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: manual_1
   m_TagString: Item
   m_Icon: {fileID: 0}
@@ -4184,6 +4937,21 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &1569121504
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1569121501}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d7a86c8b234299540be3d073c5ab7f2f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemName: 
+  value: 0
+  description: 
+  SetName: 0
 --- !u!1 &1570912332
 GameObject:
   m_ObjectHideFlags: 0
@@ -4192,8 +4960,9 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1570912333}
+  - component: {fileID: 1570912335}
   - component: {fileID: 1570912334}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: scroll_new
   m_TagString: Item
   m_Icon: {fileID: 0}
@@ -4259,6 +5028,21 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &1570912335
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1570912332}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d7a86c8b234299540be3d073c5ab7f2f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemName: 
+  value: 1
+  description: 
+  SetName: 0
 --- !u!1 &1576020696
 GameObject:
   m_ObjectHideFlags: 0
@@ -4267,9 +5051,9 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1576020697}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Small/Top
-  m_TagString: Item
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4298,8 +5082,9 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1600552006}
+  - component: {fileID: 1600552008}
   - component: {fileID: 1600552007}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: elven_leather_helm
   m_TagString: Item
   m_Icon: {fileID: 0}
@@ -4365,6 +5150,21 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &1600552008
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1600552005}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d7a86c8b234299540be3d073c5ab7f2f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemName: 
+  value: 1
+  description: 
+  SetName: 0
 --- !u!1 &1617798597
 GameObject:
   m_ObjectHideFlags: 0
@@ -4373,8 +5173,9 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1617798598}
+  - component: {fileID: 1617798600}
   - component: {fileID: 1617798599}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: silver_arrow
   m_TagString: Item
   m_Icon: {fileID: 0}
@@ -4440,6 +5241,21 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &1617798600
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1617798597}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d7a86c8b234299540be3d073c5ab7f2f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemName: Arriow
+  value: 1
+  description: Requires Bow to Sell
+  SetName: 2
 --- !u!1 &1658145468
 GameObject:
   m_ObjectHideFlags: 0
@@ -4448,8 +5264,9 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1658145469}
+  - component: {fileID: 1658145471}
   - component: {fileID: 1658145470}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: quarterstaff_new
   m_TagString: Item
   m_Icon: {fileID: 0}
@@ -4515,6 +5332,21 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &1658145471
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1658145468}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d7a86c8b234299540be3d073c5ab7f2f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemName: 
+  value: 1
+  description: 
+  SetName: 5
 --- !u!1 &1660662924
 GameObject:
   m_ObjectHideFlags: 0
@@ -4523,8 +5355,9 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1660662925}
+  - component: {fileID: 1660662927}
   - component: {fileID: 1660662926}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: troll_leather_armor
   m_TagString: Item
   m_Icon: {fileID: 0}
@@ -4590,6 +5423,21 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &1660662927
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1660662924}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d7a86c8b234299540be3d073c5ab7f2f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemName: 
+  value: 1
+  description: 
+  SetName: 0
 --- !u!1 &1669261579
 GameObject:
   m_ObjectHideFlags: 0
@@ -4598,8 +5446,9 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1669261580}
+  - component: {fileID: 1669261582}
   - component: {fileID: 1669261581}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: purple_old
   m_TagString: Item
   m_Icon: {fileID: 0}
@@ -4665,6 +5514,21 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &1669261582
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1669261579}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d7a86c8b234299540be3d073c5ab7f2f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemName: 
+  value: 1
+  description: 
+  SetName: 0
 --- !u!1 &1700339904
 GameObject:
   m_ObjectHideFlags: 0
@@ -4673,8 +5537,9 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1700339905}
+  - component: {fileID: 1700339907}
   - component: {fileID: 1700339906}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: jade
   m_TagString: Item
   m_Icon: {fileID: 0}
@@ -4740,6 +5605,21 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &1700339907
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1700339904}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d7a86c8b234299540be3d073c5ab7f2f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemName: Ring
+  value: 1
+  description: 
+  SetName: 4
 --- !u!1 &1710523415
 GameObject:
   m_ObjectHideFlags: 0
@@ -4748,8 +5628,9 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1710523416}
+  - component: {fileID: 1710523418}
   - component: {fileID: 1710523417}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: emerald
   m_TagString: Item
   m_Icon: {fileID: 0}
@@ -4815,6 +5696,21 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &1710523418
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1710523415}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d7a86c8b234299540be3d073c5ab7f2f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemName: 
+  value: 1
+  description: 
+  SetName: 0
 --- !u!1 &1726846512
 GameObject:
   m_ObjectHideFlags: 0
@@ -4823,7 +5719,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1726846513}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Books
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4860,8 +5756,9 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1741541336}
+  - component: {fileID: 1741541338}
   - component: {fileID: 1741541337}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: magenta_new
   m_TagString: Item
   m_Icon: {fileID: 0}
@@ -4927,6 +5824,21 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &1741541338
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1741541335}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d7a86c8b234299540be3d073c5ab7f2f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemName: 
+  value: 1
+  description: 
+  SetName: 0
 --- !u!1 &1755556057
 GameObject:
   m_ObjectHideFlags: 0
@@ -4935,8 +5847,9 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1755556058}
+  - component: {fileID: 1755556060}
   - component: {fileID: 1755556059}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: urand_guard_new
   m_TagString: Item
   m_Icon: {fileID: 0}
@@ -5002,6 +5915,21 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &1755556060
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1755556057}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d7a86c8b234299540be3d073c5ab7f2f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemName: 
+  value: 1
+  description: 
+  SetName: 0
 --- !u!1 &1794926572
 GameObject:
   m_ObjectHideFlags: 0
@@ -5011,9 +5939,10 @@ GameObject:
   m_Component:
   - component: {fileID: 1794926573}
   - component: {fileID: 1794926574}
-  m_Layer: 0
+  - component: {fileID: 1794926575}
+  m_Layer: 8
   m_Name: large_shield_3_new
-  m_TagString: Untagged
+  m_TagString: Item
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5077,6 +6006,21 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &1794926575
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1794926572}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d7a86c8b234299540be3d073c5ab7f2f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemName: Warrior's Sheild
+  value: 0
+  description: Worth 5 if collect all Warrior items
+  SetName: 3
 --- !u!1 &1841976401
 GameObject:
   m_ObjectHideFlags: 0
@@ -5085,8 +6029,9 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1841976402}
+  - component: {fileID: 1841976404}
   - component: {fileID: 1841976403}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: potion_golden
   m_TagString: Item
   m_Icon: {fileID: 0}
@@ -5152,6 +6097,21 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &1841976404
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1841976401}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d7a86c8b234299540be3d073c5ab7f2f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemName: 
+  value: 1
+  description: 
+  SetName: 0
 --- !u!1 &1891719292
 GameObject:
   m_ObjectHideFlags: 0
@@ -5160,9 +6120,9 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1891719293}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Misc
-  m_TagString: Item
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5195,8 +6155,9 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1972735651}
+  - component: {fileID: 1972735653}
   - component: {fileID: 1972735652}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: buckler_3_old
   m_TagString: Item
   m_Icon: {fileID: 0}
@@ -5262,6 +6223,21 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &1972735653
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1972735650}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d7a86c8b234299540be3d073c5ab7f2f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemName: 
+  value: 1
+  description: 
+  SetName: 0
 --- !u!1 &2009220866
 GameObject:
   m_ObjectHideFlags: 0
@@ -5270,8 +6246,9 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2009220867}
+  - component: {fileID: 2009220869}
   - component: {fileID: 2009220868}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: animal_skin_1_old
   m_TagString: Item
   m_Icon: {fileID: 0}
@@ -5337,6 +6314,21 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &2009220869
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2009220866}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d7a86c8b234299540be3d073c5ab7f2f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemName: 
+  value: 1
+  description: 
+  SetName: 0
 --- !u!1 &2013896956
 GameObject:
   m_ObjectHideFlags: 0
@@ -5345,8 +6337,9 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2013896957}
+  - component: {fileID: 2013896959}
   - component: {fileID: 2013896958}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: dagger_new
   m_TagString: Item
   m_Icon: {fileID: 0}
@@ -5412,6 +6405,21 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &2013896959
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2013896956}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d7a86c8b234299540be3d073c5ab7f2f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemName: 
+  value: 1
+  description: 
+  SetName: 0
 --- !u!1 &2040568327
 GameObject:
   m_ObjectHideFlags: 0
@@ -5420,8 +6428,9 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2040568328}
+  - component: {fileID: 2040568330}
   - component: {fileID: 2040568329}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: plaid_new
   m_TagString: Item
   m_Icon: {fileID: 0}
@@ -5487,3 +6496,18 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &2040568330
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2040568327}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d7a86c8b234299540be3d073c5ab7f2f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemName: 
+  value: 1
+  description: 
+  SetName: 0
