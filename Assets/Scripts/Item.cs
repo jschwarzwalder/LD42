@@ -4,16 +4,19 @@ using UnityEngine;
 
 public class Item : MonoBehaviour {
 
-    [SerializeField] string Name;
-    [SerializeField] int Value;
+    [SerializeField] string name;
+    [SerializeField] int value;
     [SerializeField] string description;
     [SerializeField] bool isSet;
     [SerializeField] private ItemSets SetName;
+    
 
 
 
 	// Use this for initialization
 	void Start () {
+
+       
 		
 	}
 	
@@ -22,5 +25,9 @@ public class Item : MonoBehaviour {
 		
 	}
 
+    public int getValue()
+    {
+        return value;
+    }
     
 }
