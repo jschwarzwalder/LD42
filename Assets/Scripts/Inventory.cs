@@ -59,7 +59,7 @@ public class Arrays : MonoBehaviour
         }
     }
 
-    public void scoreItem(Item newItem, int row, int col)
+    public void scoreItem(int row, int col)
     {
         int index = row * columns + col;
 

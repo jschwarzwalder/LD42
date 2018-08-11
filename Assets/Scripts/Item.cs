@@ -5,12 +5,12 @@ using UnityEngine;
 public class Item : MonoBehaviour
 {
 
-    public enum ItemSet { Wizard, Ranged, Warrior }
+    public enum ItemSet { Wizard, Ranged, Warrior, None }
 
     [SerializeField] string itemName;
     [SerializeField] int value;
     [SerializeField] string description;
-    [SerializeField] private ItemSet? SetName;
+    [SerializeField] ItemSet SetName;
 
 
 
@@ -36,12 +36,18 @@ public class Item : MonoBehaviour
 
     public bool isInSet()
     {
-        return SetName != null;
+        return SetName != ItemSet.None;
     }
 
     public ItemSet? getSet()
     {
-        return SetName;
+        if (isInSet()){
+            return SetName;
+        }
+        else
+        {
+            return null;
+        }
     }
 
 
