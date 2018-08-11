@@ -25,7 +25,7 @@ public class Arrays : MonoBehaviour
 
     }
 
-    void addItem(Item newItem, int row, int col)
+    public void addItem(Item newItem, int row, int col)
     {
 
         int index = row * columns + col;
@@ -45,13 +45,6 @@ public class Arrays : MonoBehaviour
 
     }
 
-    void scoreItem(Item newItem, int row, int col)
-    {
-        int index = row * columns + col;
-
-        ScoreAtIndex(index);
-    }
-
     void ScoreAtIndex(int index)
     {
         Item item = Items[index];
@@ -66,7 +59,14 @@ public class Arrays : MonoBehaviour
         }
     }
 
-    void ScoreAll()
+    public void scoreItem(Item newItem, int row, int col)
+    {
+        int index = row * columns + col;
+
+        ScoreAtIndex(index);
+    }
+
+    public void ScoreAll()
     {
 
         for (int i = 0; i <= inventorySize; i++)
