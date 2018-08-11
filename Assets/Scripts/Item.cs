@@ -4,17 +4,18 @@ using UnityEngine;
 
 public class Item : MonoBehaviour {
 
-    [SerializeField] string name;
+    public enum ItemSet { Wizard, Ranged, Warrior }
+
+    [SerializeField] string itemName;
     [SerializeField] int value;
     [SerializeField] string description;
-    [SerializeField] bool isSet;
-    [SerializeField] private ItemSets SetName;
+    [SerializeField] private ItemSet? SetName;
+
     
 
 
-
-	// Use this for initialization
-	void Start () {
+    // Use this for initialization
+    void Start () {
 
        
 		
@@ -30,4 +31,14 @@ public class Item : MonoBehaviour {
         return value;
     }
     
+    public bool isInSet()
+    {
+        return SetName != null;
+    }
+
+    public ItemSet? getSet()
+    {
+        return SetName;
+    }
+
 }
