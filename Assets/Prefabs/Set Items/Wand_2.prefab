@@ -9,45 +9,45 @@ Prefab:
     m_Modifications: []
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 0}
-  m_RootGameObject: {fileID: 1529416375926992}
+  m_RootGameObject: {fileID: 1741223644676312}
   m_IsPrefabAsset: 1
---- !u!1 &1529416375926992
+--- !u!1 &1741223644676312
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 4139219598867978}
-  - component: {fileID: 114228653506478580}
-  - component: {fileID: 212834111777741742}
-  - component: {fileID: 61911725568363850}
+  - component: {fileID: 4462019328340992}
+  - component: {fileID: 114201359941338008}
+  - component: {fileID: 212298665702013892}
+  - component: {fileID: 61302890768503480}
   m_Layer: 8
-  m_Name: Wand_1
+  m_Name: Wand_2
   m_TagString: Item
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &4139219598867978
+--- !u!4 &4462019328340992
 Transform:
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1529416375926992}
+  m_GameObject: {fileID: 1741223644676312}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -1.5095955, y: 2.3468494, z: 0}
+  m_LocalPosition: {x: -0.56, y: 2.37, z: 0}
   m_LocalScale: {x: 2, y: 2, z: 2}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!61 &61911725568363850
+--- !u!61 &61302890768503480
 BoxCollider2D:
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1529416375926992}
+  m_GameObject: {fileID: 1741223644676312}
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
@@ -67,12 +67,12 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.32, y: 0.32}
   m_EdgeRadius: 0
---- !u!114 &114228653506478580
+--- !u!114 &114201359941338008
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1529416375926992}
+  m_GameObject: {fileID: 1741223644676312}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: d7a86c8b234299540be3d073c5ab7f2f, type: 3}
@@ -80,14 +80,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemName: Wand
   value: 1
-  description: Used to cast Arcane Spells
-  SetName: 0
---- !u!212 &212834111777741742
+  description: Used to cast Divine Spells. Limit 2 Wands
+  SetName: 5
+--- !u!212 &212298665702013892
 SpriteRenderer:
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1529416375926992}
+  m_GameObject: {fileID: 1741223644676312}
   m_Enabled: 1
   m_CastShadows: 0
   m_ReceiveShadows: 0
@@ -117,7 +117,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: d320fd7a36f0f5046a8612833004e691, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 53200f6c8ed70d440bbbebf6bde59699, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 1
   m_FlipY: 0

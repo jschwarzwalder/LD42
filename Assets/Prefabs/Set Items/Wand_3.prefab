@@ -23,7 +23,7 @@ GameObject:
   - component: {fileID: 212561609766777736}
   - component: {fileID: 61969941380858726}
   m_Layer: 8
-  m_Name: Weapon_7
+  m_Name: Wand_3
   m_TagString: Item
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -78,10 +78,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d7a86c8b234299540be3d073c5ab7f2f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  itemName: Staff of Healing
+  itemName: Healing Wand
   value: 1
-  description: +5 Health Regeneration
-  SetName: 0
+  description: +5 Health Regeneration Limit 2 Wands
+  SetName: 5
 --- !u!212 &212561609766777736
 SpriteRenderer:
   m_ObjectHideFlags: 1
@@ -119,7 +119,7 @@ SpriteRenderer:
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 39801185b2464f549886a4b0d5e2b6a7, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_FlipX: 0
+  m_FlipX: 1
   m_FlipY: 0
   m_DrawMode: 0
   m_Size: {x: 0.32, y: 0.32}
