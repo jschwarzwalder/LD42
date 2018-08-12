@@ -8,6 +8,7 @@ All Code created by Paul and Jami Schwarzwalder
 Art Assets Used
 Dungeon Crawl 32 x 32 by Chris Hamons  https://opengameart.org/content/dungeon-crawl-32x32-tiles-supplemental
 Wooden GUI by Rexard https://assetstore.unity.com/packages/2d/gui/icons/wooden-ui-93545
+Barrel by Manenwolf https://opengameart.org/content/barrel
 
 Music from FMA
 To The Top by Mid-Air Machine http://freemusicarchive.org/music/Ask%20Again/Small_Things__Orchestral_Music/Going_High
