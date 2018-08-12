@@ -22,6 +22,7 @@ GameObject:
   - component: {fileID: 212243231971639392}
   - component: {fileID: 114301232032015332}
   - component: {fileID: 61357553030913586}
+  - component: {fileID: 114558720321410606}
   m_Layer: 8
   m_Name: S_Helm
   m_TagString: Item
@@ -79,9 +80,21 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   itemName: Warrior's Helm
-  value: 0
+  value: 1
   description: Worth 5 if collect all Warrior items
   SetName: 3
+--- !u!114 &114558720321410606
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1327027941275088}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b756b9fb1890c164299fe3c60290b37b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  SetSize: 3
 --- !u!212 &212243231971639392
 SpriteRenderer:
   m_ObjectHideFlags: 1

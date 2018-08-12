@@ -23,6 +23,7 @@ GameObject:
   - component: {fileID: 212045773466771900}
   - component: {fileID: 61305518792489168}
   - component: {fileID: 114601829830951970}
+  - component: {fileID: 114239782988351440}
   m_Layer: 8
   m_Name: Book_5
   m_TagString: Item
@@ -68,6 +69,18 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.32, y: 0.32}
   m_EdgeRadius: 0
+--- !u!114 &114239782988351440
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1923388469357304}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b756b9fb1890c164299fe3c60290b37b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  SetSize: 3
 --- !u!114 &114507383627555290
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -80,7 +93,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   itemName: 'Book of Knowledge part 3 '
-  value: 0
+  value: 1
   description: Heavy. Part of a Set. Collect all 3 or worthless.
   SetName: 4
 --- !u!114 &114601829830951970

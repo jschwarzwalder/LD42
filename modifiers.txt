@@ -1,22 +1,18 @@
 2 normal per special?
 specials worth more
 
-Item must be on the edge                    x2
-Item must not be on the edge                x1.5
-Item must be on top                         x2.5
-Item must be on bottom                      x2.5
-Item must be on left                        x2.5
-Item must be on right                       x2.5
-When placed, Item destroys object to its _  x1
-This item can be placed on top of another item, destroying the original item x1
+X Item must be on top                         x2.5
+X Item must be on bottom                      x2.5
+X Item must be on side                        x2.5
+X This item can be placed on top of another item, destroying the original item x1
 This item only has value if player has all three x5
 This item is worth twice as much if player has all three x2
 This item is worth zero if player collects all three x5
-Must have at least 3 Arrows to sell Bow
+X Must have at least 3 Arrows to sell Bow
 
 Stretch Goals:
-Must be adjacent to others in set to score x4
+- Must be adjacent to others in set to score x4
 Transforms item that it's pointing at x3
 Becomes item that it's pointing at x0
-Item can be placed on top of another item, scoring the original item x1
-Item that finishes round, scoring all items and emptying your bag x0
+X Item can be placed on top of another item, scoring the original item x1
+- Item that finishes round, scoring all items and emptying your bag x0
