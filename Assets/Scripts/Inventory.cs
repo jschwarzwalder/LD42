@@ -94,6 +94,8 @@ public class Inventory : MonoBehaviour
             ScoreAtIndex(i, scorepad);
         }
 
+        GameObject gameManagerObj = GameObject.FindGameObjectWithTag("Game Manager");
+        gameManagerObj.GetComponent<LevelManager>().EndGame(inventoryScore);
     }
 
     void destroyItem(Item newItem, int row, int col)
