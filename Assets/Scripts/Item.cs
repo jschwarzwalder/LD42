@@ -30,7 +30,7 @@ public class Item : MonoBehaviour
 
         GameObject cursorObj = GameObject.FindGameObjectWithTag("Cursor");
         cursor = cursorObj.GetComponent<Cursor>();
-        sound = GetComponent<AudioSource>();
+        sound = cursor.GetComponent<AudioSource>();
 
     }
 
