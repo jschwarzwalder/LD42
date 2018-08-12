@@ -5,7 +5,7 @@ using UnityEngine;
 public class Item : MonoBehaviour
 {
 
-    public enum ItemSet { None, Wizard, Ranged, Warrior, Trilogy}
+    public enum ItemSet { None, Wizard, Ranged, Warrior, Trilogy, Wands} 
 
     [SerializeField] string itemName;
     [SerializeField] int value;
