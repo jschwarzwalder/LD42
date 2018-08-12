@@ -1499,6 +1499,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ScoreScreen: {fileID: 0}
   ScoreText: {fileID: 0}
+  CanPause: 0
 --- !u!4 &1508324456
 Transform:
   m_ObjectHideFlags: 0
