@@ -21,6 +21,7 @@ namespace Modifiers
             Debug.Log("Sell " + slot.SlotItem.gameObject);
             slot.ScoreItemEarly();
             slot.SlotItem.Destroy();
+            GetComponent<Item>().Destroy();
         }
     }
 }
