@@ -22,6 +22,7 @@ GameObject:
   - component: {fileID: 114565074603997354}
   - component: {fileID: 212469175044683938}
   - component: {fileID: 61286148103837418}
+  - component: {fileID: 114950501609413306}
   m_Layer: 8
   m_Name: Bow_2
   m_TagString: Item
@@ -82,6 +83,18 @@ MonoBehaviour:
   value: 1
   description: Requires Arrows to Sell
   SetName: 2
+--- !u!114 &114950501609413306
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1484195836973038}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6ffce5ea9e1ade848b93be94503bb928, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  RangedType: 0
 --- !u!212 &212469175044683938
 SpriteRenderer:
   m_ObjectHideFlags: 1

@@ -13,7 +13,7 @@ public class ItemsToCollect : MonoBehaviour
     [SerializeField] Transform startPosition;
     [SerializeField] Transform endPosition;
 
-
+    private bool finished;
     private float prevSpawn;
     private Cursor cursor;
     
@@ -37,7 +37,12 @@ public class ItemsToCollect : MonoBehaviour
 
         MoveItems();
 
+        if (!finished && current_index >= itemPrefabs.Length && cursor.SelectedItem == null && itemsToPickup.Count == 0) {
 
+            GameObject cursorObj = GameObject.FindGameObjectWithTag("Inventory");
+            cursorObj.GetComponent<Inventory>().ScoreAll();
+            finished = true;
+        }
 
 
     }

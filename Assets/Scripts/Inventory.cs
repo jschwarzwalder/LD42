@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -48,17 +49,21 @@ public class Inventory : MonoBehaviour
 
     }
 
-    void ScoreAtIndex(int index)
+    void ScoreAtIndex(int index, Scorepad scorepad)
     {
         Item item = Items[index];
+        if (item == null) {
+            return;
+        }
         if (!item.isInSet())
         {
             inventoryScore += item.getValue();
         }
-        else
-        {
-            //TODO: handle set value
-            // inventoryScore += item.modScore();
+        else {
+            ItemModifier[] modifiers = item.GetComponents<ItemModifier>();
+            foreach (ItemModifier modifier in modifiers) {
+                inventoryScore += modifier.GetSetValue(scorepad);
+            }
         }
 
         Debug.Log("Total Score: " + inventoryScore);
@@ -68,15 +73,14 @@ public class Inventory : MonoBehaviour
     {
         int index = row * columns + col;
 
-        ScoreAtIndex(index);
+        ScoreAtIndex(index, null);
     }
 
-    public void ScoreAll()
-    {
-
-        for (int i = 0; i <= inventorySize; i++)
+    public void ScoreAll() {
+        Scorepad scorepad = new Scorepad();
+        for (int i = 0; i < inventorySize; i++)
         {
-            ScoreAtIndex(i);
+            ScoreAtIndex(i, scorepad);
         }
 
     }

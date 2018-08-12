@@ -19,6 +19,6 @@ public abstract class ItemModifier : MonoBehaviour {
     public virtual bool CanReplace (ItemSlot slot) { return false;} 
     public virtual bool CanPlace (ItemSlot slot) { return true; }
     public virtual void PerformAction (ItemSlot slot) { }
-    public virtual int  GetSetValue (ItemSlot slot, Scorepad scorepad) { return 0; }
+    public virtual int  GetSetValue (Scorepad scorepad) { return 0; }
 
 }
