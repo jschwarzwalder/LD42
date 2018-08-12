@@ -22,6 +22,7 @@ GameObject:
   - component: {fileID: 114873255437155370}
   - component: {fileID: 212838975896048726}
   - component: {fileID: 61910264974004632}
+  - component: {fileID: 114456197131787454}
   m_Layer: 8
   m_Name: W_Hat
   m_TagString: Item
@@ -67,6 +68,19 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.32, y: 0.32}
   m_EdgeRadius: 0
+--- !u!114 &114456197131787454
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1362025429659300}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 98945f77da21c17409e3f74b339bd75e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  SetSize: 3
+  SetMultiplier: 2
 --- !u!114 &114873255437155370
 MonoBehaviour:
   m_ObjectHideFlags: 1

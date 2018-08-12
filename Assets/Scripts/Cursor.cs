@@ -21,6 +21,8 @@ public class Cursor : MonoBehaviour {
         get { return Camera.main.ScreenToWorldPoint(Input.mousePosition); }
     }
 
+    public Item HoverItem { get; set; }
+
     // Use this for initialization
 	void Start () {
 		

@@ -22,6 +22,7 @@ GameObject:
   - component: {fileID: 114048883307533072}
   - component: {fileID: 212034397944888124}
   - component: {fileID: 61512395264473890}
+  - component: {fileID: 114964178046248286}
   m_Layer: 8
   m_Name: W_Staff
   m_TagString: Item
@@ -82,6 +83,19 @@ MonoBehaviour:
   value: 1
   description: Worth 2, if collect all Wizard items
   SetName: 1
+--- !u!114 &114964178046248286
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1946644712487682}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 98945f77da21c17409e3f74b339bd75e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  SetSize: 3
+  SetMultiplier: 2
 --- !u!212 &212034397944888124
 SpriteRenderer:
   m_ObjectHideFlags: 1

@@ -19,11 +19,15 @@ public class Item : MonoBehaviour
         set { this.value = value; }
     }
 
+    private Cursor cursor;
+
 
     // Use this for initialization
     void Start()
     {
 
+        GameObject cursorObj = GameObject.FindGameObjectWithTag("Cursor");
+        cursor = cursorObj.GetComponent<Cursor>();
 
 
     }
@@ -58,12 +62,14 @@ public class Item : MonoBehaviour
     private void OnMouseDown () {
         if (InInventory) return;
 
-        GameObject cursorObj = GameObject.FindGameObjectWithTag("Cursor");
-        Cursor cursor = cursorObj.GetComponent<Cursor>();
         if (cursor.SelectedItem != null) return;
 
         cursor.SelectedItem = this;
         GetComponent<Collider2D>().enabled = false;
+    }
+
+    private void OnMouseEnter () {
+        cursor.HoverItem = this;
     }
 
     public string getName()

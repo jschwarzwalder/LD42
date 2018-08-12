@@ -22,6 +22,7 @@ GameObject:
   - component: {fileID: 114018636452613474}
   - component: {fileID: 212561609766777736}
   - component: {fileID: 61969941380858726}
+  - component: {fileID: 114969534075162864}
   m_Layer: 8
   m_Name: Wand_3
   m_TagString: Item
@@ -82,6 +83,18 @@ MonoBehaviour:
   value: 1
   description: +5 Health Regeneration Limit 2 Wands
   SetName: 5
+--- !u!114 &114969534075162864
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1791942578901148}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e7f43b9b2e474274bbdb33e6a02c7c32, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  SetSize: 3
 --- !u!212 &212561609766777736
 SpriteRenderer:
   m_ObjectHideFlags: 1

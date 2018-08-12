@@ -35,16 +35,20 @@ public class DisplayToolTip : MonoBehaviour
         if (cursor.SelectedItem != null)
         {
             displayItem = cursor.SelectedItem;
-            if (currentItem != displayItem)
-            {
-                RetrieveItemInfo(displayItem);
-                currentItem = displayItem;
-            }
 
         }
-        else
+        else {
+            displayItem = cursor.HoverItem;
+        }
+
+        if (displayItem == null) {
+            return;
+        }
+
+        if (currentItem != displayItem)
         {
-            //TODO display onHover
+            RetrieveItemInfo(displayItem);
+            currentItem = displayItem;
         }
 
         iconPosition.sprite = displayItem.GetComponent<SpriteRenderer>().sprite;

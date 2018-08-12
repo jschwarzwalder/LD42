@@ -66,6 +66,7 @@ public class ItemSlot : MonoBehaviour {
             item.InInventory = true;
             item.transform.SetParent(transform);
             item.transform.localPosition = new Vector3(0, 0, item.transform.localPosition.z);
+            item.GetComponent<Collider2D>().enabled = true;
             SlotItem = item;
         }
 
