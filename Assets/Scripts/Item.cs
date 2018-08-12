@@ -56,12 +56,14 @@ public class Item : MonoBehaviour
     }
 
     private void OnMouseDown () {
-        if (!InInventory) {
-            GameObject cursorObj = GameObject.FindGameObjectWithTag("Cursor");
-            cursorObj.GetComponent<Cursor>().SelectedItem = this;
-            GetComponent<Collider2D>().enabled = false;
-            
-        }
+        if (InInventory) return;
+
+        GameObject cursorObj = GameObject.FindGameObjectWithTag("Cursor");
+        Cursor cursor = cursorObj.GetComponent<Cursor>();
+        if (cursor.SelectedItem != null) return;
+
+        cursor.SelectedItem = this;
+        GetComponent<Collider2D>().enabled = false;
     }
 
     public string getName()
