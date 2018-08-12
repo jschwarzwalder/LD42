@@ -55,7 +55,6 @@ public class Item : MonoBehaviour
         }
     }
 
-
     private void OnMouseDown () {
         if (!InInventory) {
             GameObject cursorObj = GameObject.FindGameObjectWithTag("Cursor");
@@ -63,6 +62,17 @@ public class Item : MonoBehaviour
             GetComponent<Collider2D>().enabled = false;
             
         }
+    }
+
+    public string getName()
+    {
+        return itemName;
+    
+    }
+
+    public string getDesc()
+    {
+        return description;
     }
 
 }
