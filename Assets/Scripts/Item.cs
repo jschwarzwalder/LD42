@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -11,13 +12,18 @@ public class Item : MonoBehaviour
     [SerializeField] int value;
     [SerializeField] string description;
     [SerializeField] ItemSet SetName;
-    
-    public bool InInventory { get; set; }
+
+    public bool InInventory {
+        get { return Slot != null; }
+    }
 
     public int Value {
         get { return value; }
         set { this.value = value; }
     }
+
+    public ItemSlot Slot { get; set; }
+    public bool Destroyed { get; private set; }
 
     private Cursor cursor;
 
@@ -31,6 +37,7 @@ public class Item : MonoBehaviour
         GameObject cursorObj = GameObject.FindGameObjectWithTag("Cursor");
         cursor = cursorObj.GetComponent<Cursor>();
         sound = cursor.GetComponent<AudioSource>();
+        Destroyed = false;
 
     }
 
@@ -38,6 +45,14 @@ public class Item : MonoBehaviour
     void Update()
     {
 
+    }
+
+    public void Destroy() {
+        if (InInventory) {
+            Slot.SlotItem = null;
+        }
+        Destroyed = true;
+        GameObject.Destroy(gameObject);
     }
 
     public int getValue()
@@ -62,12 +77,15 @@ public class Item : MonoBehaviour
     }
 
     private void OnMouseDown () {
-        if (InInventory) return;
+        if (InInventory) {
+            Slot.OnMouseDown();
+        }
+        else {
+            if (cursor.SelectedItem != null) return;
 
-        if (cursor.SelectedItem != null) return;
-
-        cursor.SelectedItem = this;
-        GetComponent<Collider2D>().enabled = false;
+            cursor.SelectedItem = this;
+            GetComponent<Collider2D>().enabled = false;
+        }
     }
 
     private void OnMouseEnter () {
@@ -89,5 +107,5 @@ public class Item : MonoBehaviour
     {
         sound.Play();
     }
-
+    
 }

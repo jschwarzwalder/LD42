@@ -20,7 +20,7 @@ namespace Modifiers
             if (slot.SlotItem == null) return;
             Debug.Log("Sell " + slot.SlotItem.gameObject);
             slot.ScoreItemEarly();
-            Destroy(slot.SlotItem.gameObject);
+            slot.SlotItem.Destroy();
         }
     }
 }
