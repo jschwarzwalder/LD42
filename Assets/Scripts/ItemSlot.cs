@@ -62,6 +62,9 @@ public class ItemSlot : MonoBehaviour {
             }
             Array.ForEach(modifiers, PerformAction);
 
+            if (item.Destroyed) {
+                return; //Don't add an item to inventory if it destroyed itself
+            }
             cursor.SelectedItem = null;
             item.Slot = this;
             item.transform.SetParent(transform);
