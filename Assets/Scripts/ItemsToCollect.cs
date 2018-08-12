@@ -26,7 +26,7 @@ public class ItemsToCollect : MonoBehaviour
         current_index = 0;
 
         GameObject cursorObj = GameObject.FindGameObjectWithTag("Cursor");
-        cursor = cursorObj.GetComponent<Cursor>();
+        cursor = cursorObj != null ? cursorObj.GetComponent<Cursor>() : null;
 
     }
 
@@ -115,7 +115,7 @@ public class ItemsToCollect : MonoBehaviour
         {
             itemsToPickup.Remove((GameObject) item);
         }
-        if (cursor.SelectedItem != null)
+        if (cursor != null && cursor.SelectedItem != null)
         {
             itemsToPickup.Remove(cursor.SelectedItem.gameObject);
         }

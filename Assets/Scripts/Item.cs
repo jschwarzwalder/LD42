@@ -35,8 +35,8 @@ public class Item : MonoBehaviour
     {
 
         GameObject cursorObj = GameObject.FindGameObjectWithTag("Cursor");
-        cursor = cursorObj.GetComponent<Cursor>();
-        sound = cursor.GetComponent<AudioSource>();
+        cursor = cursorObj != null ? cursorObj.GetComponent<Cursor>() : null;
+        sound = cursor != null ? cursor.GetComponent<AudioSource>() : null;
         Destroyed = false;
 
     }
@@ -81,7 +81,7 @@ public class Item : MonoBehaviour
             Slot.OnMouseDown();
         }
         else {
-            if (cursor.SelectedItem != null) return;
+            if (cursor == null || cursor.SelectedItem != null) return;
 
             cursor.SelectedItem = this;
             GetComponent<Collider2D>().enabled = false;
@@ -89,6 +89,7 @@ public class Item : MonoBehaviour
     }
 
     private void OnMouseEnter () {
+        if (cursor == null) return;
         cursor.HoverItem = this;
     }
 
@@ -103,8 +104,8 @@ public class Item : MonoBehaviour
         return description;
     }
 
-    public void playSound()
-    {
+    public void playSound() {
+        if (sound == null) return;
         sound.Play();
     }
     
