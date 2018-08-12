@@ -11,6 +11,7 @@ public class Inventory : MonoBehaviour
     [SerializeField] int rows;
     [SerializeField] int columns;
     private int inventorySize;
+    private int openSlots;
 
     public int Rows { get { return rows; } }
     public int Columns { get { return columns; } }
@@ -19,6 +20,7 @@ public class Inventory : MonoBehaviour
     void Start()
     {
         inventorySize = rows * columns;
+        openSlots = inventorySize;
         Items = new Item[inventorySize];
         inventoryScore = 0;
     }
@@ -37,6 +39,10 @@ public class Inventory : MonoBehaviour
         if (Items[index] == null)
         {
             Items[index] = newItem;
+            openSlots--;
+            if (openSlots == 0) {
+                ScoreAll();
+            }
         }
 
     }
