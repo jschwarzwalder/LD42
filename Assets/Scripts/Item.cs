@@ -56,6 +56,7 @@ public class Item : MonoBehaviour
             GameObject cursorObj = GameObject.FindGameObjectWithTag("Cursor");
             cursorObj.GetComponent<Cursor>().SelectedItem = this;
             GetComponent<Collider2D>().enabled = false;
+            
         }
     }
 
