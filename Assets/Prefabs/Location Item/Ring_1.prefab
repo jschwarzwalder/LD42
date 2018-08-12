@@ -22,6 +22,7 @@ GameObject:
   - component: {fileID: 114168975599948030}
   - component: {fileID: 212602807596014292}
   - component: {fileID: 61498743594820488}
+  - component: {fileID: 114376612816919534}
   m_Layer: 8
   m_Name: Ring_1
   m_TagString: Item
@@ -82,6 +83,17 @@ MonoBehaviour:
   value: 1
   description: Small, Keep on Top
   SetName: 4
+--- !u!114 &114376612816919534
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1229642675560882}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 39bfa37c017cd7448bbf18ad30c9856a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!212 &212602807596014292
 SpriteRenderer:
   m_ObjectHideFlags: 1

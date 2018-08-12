@@ -10,7 +10,6 @@ public class InventoryUIGenerator : MonoBehaviour {
     private int currentHeight;
     private Vector2 currentSpacing;
     private Vector2 currentMargin;
-    private Inventory inventory;
 
     public int Width;
     public int Height;
@@ -20,7 +19,9 @@ public class InventoryUIGenerator : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
-	    inventory = GetComponent<Inventory>();
+	    Inventory inventory = GetComponent<Inventory>();
+	    Width = inventory.Columns;
+	    Height = inventory.Rows;
 	}
 	
 	// Update is called once per frame
@@ -44,8 +45,9 @@ public class InventoryUIGenerator : MonoBehaviour {
                 Transform itemSlotTransform = itemSlotObj.transform;
                 itemSlotTransform.SetParent(transform);
 
-                Vector2 position = new Vector2(Margin.x + col * Spacing.x,
-                                               Margin.y + row * Spacing.y);
+                Vector3 position = new Vector3(Margin.x + col * Spacing.x,
+                                               Margin.y + row * Spacing.y,
+                                               itemSlotTransform.position.z);
                 itemSlotTransform.localPosition = position;
 
                 ItemSlot itemSlot = itemSlotObj.GetComponent<ItemSlot>();

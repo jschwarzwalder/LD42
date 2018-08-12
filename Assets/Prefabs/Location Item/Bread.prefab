@@ -22,6 +22,7 @@ GameObject:
   - component: {fileID: 114276188673173776}
   - component: {fileID: 212970037950313626}
   - component: {fileID: 61418425336546820}
+  - component: {fileID: 114852997884744404}
   m_Layer: 8
   m_Name: Bread
   m_TagString: Item
@@ -82,6 +83,17 @@ MonoBehaviour:
   value: 1
   description: Squishy, Place on Top
   SetName: 4
+--- !u!114 &114852997884744404
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1832114680844236}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 39bfa37c017cd7448bbf18ad30c9856a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!212 &212970037950313626
 SpriteRenderer:
   m_ObjectHideFlags: 1

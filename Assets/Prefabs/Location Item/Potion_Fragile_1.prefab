@@ -22,6 +22,7 @@ GameObject:
   - component: {fileID: 114297673986479816}
   - component: {fileID: 212903379473609158}
   - component: {fileID: 61899757337257404}
+  - component: {fileID: 114143710730313310}
   m_Layer: 8
   m_Name: Potion_Fragile_1
   m_TagString: Item
@@ -67,6 +68,17 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.32, y: 0.32}
   m_EdgeRadius: 0
+--- !u!114 &114143710730313310
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1583372762720262}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 39bfa37c017cd7448bbf18ad30c9856a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &114297673986479816
 MonoBehaviour:
   m_ObjectHideFlags: 1

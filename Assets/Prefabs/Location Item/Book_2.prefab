@@ -22,6 +22,7 @@ GameObject:
   - component: {fileID: 114395892085408748}
   - component: {fileID: 212956489770484078}
   - component: {fileID: 61787465920039736}
+  - component: {fileID: 114745978175918046}
   m_Layer: 8
   m_Name: Book_2
   m_TagString: Item
@@ -82,6 +83,17 @@ MonoBehaviour:
   value: 1
   description: Heavy. Guaranteed to produce dramatic results
   SetName: 0
+--- !u!114 &114745978175918046
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1250094267638988}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5a5d34a9908d25349a9e109c49834b52, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!212 &212956489770484078
 SpriteRenderer:
   m_ObjectHideFlags: 1

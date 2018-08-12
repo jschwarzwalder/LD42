@@ -11,6 +11,9 @@ public class Inventory : MonoBehaviour
     [SerializeField] int columns;
     private int inventorySize;
 
+    public int Rows { get { return rows; } }
+    public int Columns { get { return columns; } }
+
     // Use this for initialization
     void Start()
     {
@@ -57,6 +60,8 @@ public class Inventory : MonoBehaviour
             //TODO: handle set value
             // inventoryScore += item.modScore();
         }
+
+        Debug.Log("Total Score: " + inventoryScore);
     }
 
     public void scoreItem(int row, int col)

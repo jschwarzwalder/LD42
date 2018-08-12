@@ -22,6 +22,7 @@ GameObject:
   - component: {fileID: 114140249764558174}
   - component: {fileID: 212939713059639202}
   - component: {fileID: 61144797094182298}
+  - component: {fileID: 114771972819501122}
   m_Layer: 8
   m_Name: Potion_Fragile_2
   m_TagString: Item
@@ -82,6 +83,17 @@ MonoBehaviour:
   value: 1
   description: Volitile, Keep at top of Bag.
   SetName: 4
+--- !u!114 &114771972819501122
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1053569912435458}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 39bfa37c017cd7448bbf18ad30c9856a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!212 &212939713059639202
 SpriteRenderer:
   m_ObjectHideFlags: 1
