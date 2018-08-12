@@ -22,6 +22,7 @@ GameObject:
   - component: {fileID: 114073820224057044}
   - component: {fileID: 212178629182238194}
   - component: {fileID: 61852795651151040}
+  - component: {fileID: 114166849936887296}
   m_Layer: 8
   m_Name: DestroyItem
   m_TagString: Item
@@ -82,6 +83,17 @@ MonoBehaviour:
   value: 1
   description: Destroys item in Inventory
   SetName: 0
+--- !u!114 &114166849936887296
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1613380512991704}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3a123c3846ccf7c46ab5d20ef322e243, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!212 &212178629182238194
 SpriteRenderer:
   m_ObjectHideFlags: 1

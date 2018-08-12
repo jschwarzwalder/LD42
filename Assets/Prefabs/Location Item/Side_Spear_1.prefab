@@ -22,6 +22,7 @@ GameObject:
   - component: {fileID: 114369278469241698}
   - component: {fileID: 212394076307899876}
   - component: {fileID: 61712675710088274}
+  - component: {fileID: 114888347802822762}
   m_Layer: 8
   m_Name: Side_Spear_1
   m_TagString: Item
@@ -82,6 +83,17 @@ MonoBehaviour:
   value: 1
   description: Must be placed on the side of bag
   SetName: 5
+--- !u!114 &114888347802822762
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1506148100330762}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6f78af3b36ff9874ba894f3c9b55322d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!212 &212394076307899876
 SpriteRenderer:
   m_ObjectHideFlags: 1

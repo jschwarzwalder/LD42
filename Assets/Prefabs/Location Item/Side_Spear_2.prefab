@@ -22,6 +22,7 @@ GameObject:
   - component: {fileID: 114852966937385932}
   - component: {fileID: 212950115419021748}
   - component: {fileID: 61567644907871914}
+  - component: {fileID: 114544909643731750}
   m_Layer: 8
   m_Name: Side_Spear_2
   m_TagString: Item
@@ -67,6 +68,17 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.32, y: 0.32}
   m_EdgeRadius: 0
+--- !u!114 &114544909643731750
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1283527652176948}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6f78af3b36ff9874ba894f3c9b55322d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &114852966937385932
 MonoBehaviour:
   m_ObjectHideFlags: 1

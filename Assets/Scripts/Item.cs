@@ -14,6 +14,11 @@ public class Item : MonoBehaviour
     
     public bool InInventory { get; set; }
 
+    public int Value {
+        get { return value; }
+        set { this.value = value; }
+    }
+
 
     // Use this for initialization
     void Start()

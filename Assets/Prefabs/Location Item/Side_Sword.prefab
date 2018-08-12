@@ -22,6 +22,7 @@ GameObject:
   - component: {fileID: 114564118651931958}
   - component: {fileID: 212129140623206148}
   - component: {fileID: 61656622147340336}
+  - component: {fileID: 114603832418125660}
   m_Layer: 8
   m_Name: Side_Sword
   m_TagString: Item
@@ -82,6 +83,17 @@ MonoBehaviour:
   value: 1
   description: Must be placed on the side of bag
   SetName: 5
+--- !u!114 &114603832418125660
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1401590491932392}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6f78af3b36ff9874ba894f3c9b55322d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!212 &212129140623206148
 SpriteRenderer:
   m_ObjectHideFlags: 1
