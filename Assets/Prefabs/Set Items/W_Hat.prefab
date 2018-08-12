@@ -80,7 +80,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   SetSize: 3
-  SetMultiplier: 2
+  SetMultiplier: 3
 --- !u!114 &114873255437155370
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -93,7 +93,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   itemName: Wizard's Hat
-  value: 1
+  value: 2
   description: Worth 4, if collect all Wizard items
   SetName: 1
 --- !u!212 &212838975896048726

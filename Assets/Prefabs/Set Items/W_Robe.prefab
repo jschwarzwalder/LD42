@@ -80,7 +80,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   itemName: Wizard's Robe
-  value: 1
+  value: 2
   description: Worth 4, if collect all Wizard items
   SetName: 1
 --- !u!114 &114811831618711350
@@ -95,7 +95,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   SetSize: 3
-  SetMultiplier: 2
+  SetMultiplier: 3
 --- !u!212 &212426800739226880
 SpriteRenderer:
   m_ObjectHideFlags: 1
