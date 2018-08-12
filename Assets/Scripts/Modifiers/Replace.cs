@@ -16,7 +16,9 @@ namespace Modifiers {
         public override void PerformAction (ItemSlot slot) {
             if (slot.SlotItem == null) return;
             Debug.Log("Destroy " + slot.SlotItem.gameObject);
-            Destroy(slot.SlotItem.gameObject);
+            Item itemToDestroy = slot.SlotItem;
+            itemToDestroy.Destroy();
+            GetComponent<Item>().Destroy();
         }
     }
 }

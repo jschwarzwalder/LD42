@@ -14,7 +14,7 @@ public class ItemSlot : MonoBehaviour {
         {
             return inventory.getItemAt(Row, Column);
         }
-        private set {
+        set {
             inventory.addItem(value, Row, Column);
         }
     }
@@ -45,7 +45,7 @@ public class ItemSlot : MonoBehaviour {
         modifier.PerformAction(this);
     }
 
-    private void OnMouseDown () {
+    public void OnMouseDown () {
         GameObject cursorObj = GameObject.FindGameObjectWithTag("Cursor");
         Cursor cursor = cursorObj.GetComponent<Cursor>();
         Item item = cursor.SelectedItem;
@@ -63,7 +63,7 @@ public class ItemSlot : MonoBehaviour {
             Array.ForEach(modifiers, PerformAction);
 
             cursor.SelectedItem = null;
-            item.InInventory = true;
+            item.Slot = this;
             item.transform.SetParent(transform);
             item.transform.localPosition = new Vector3(0, 0, item.transform.localPosition.z);
             item.GetComponent<Collider2D>().enabled = true;

@@ -17,6 +17,11 @@ namespace Modifiers {
                 return SetSize <= 1 ? value * SetMultiplier : value;
             }
 
+            if (scorepad == null)
+            {
+                return 0;
+            }
+
             scorepad.IncrementSetCount(set.Value);
             scorepad.IncreaseSetValue(set.Value, value);
 

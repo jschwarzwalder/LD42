@@ -16,6 +16,10 @@ namespace Modifiers {
                 return SetSize <= 1 ? 0 : value;
             }
 
+            if (scorepad == null) {
+                return 0;
+            }
+
             if (scorepad.GetSetCount(set.Value) >= SetSize) {
                 return 0;
             }

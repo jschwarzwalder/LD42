@@ -44,6 +44,10 @@ public class Inventory : MonoBehaviour
                 ScoreAll();
             }
         }
+        else if (newItem == null) {
+            Items[index] = null;
+            openSlots++;
+        }
 
     }
 
@@ -58,7 +62,7 @@ public class Inventory : MonoBehaviour
     void ScoreAtIndex(int index, Scorepad scorepad)
     {
         Item item = Items[index];
-        if (item == null) {
+        if (item == null || item.Destroyed) {
             return;
         }
         if (!item.isInSet())
@@ -83,6 +87,7 @@ public class Inventory : MonoBehaviour
     }
 
     public void ScoreAll() {
+        Debug.Log("Score All");
         Scorepad scorepad = new Scorepad();
         for (int i = 0; i < inventorySize; i++)
         {

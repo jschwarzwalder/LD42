@@ -14,6 +14,11 @@ namespace Modifiers {
         public override int GetSetValue (Scorepad scorepad)
         {
             //if we already have enough bows and arrows, just score it
+            if (scorepad == null)
+            {
+                return 0;
+            }
+
             int itemValue = GetComponent<Item>().Value;
             if (scorepad.CanScoreRanged()) {
                 return itemValue;
