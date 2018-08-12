@@ -68,6 +68,7 @@ public class ItemSlot : MonoBehaviour {
             item.transform.localPosition = new Vector3(0, 0, item.transform.localPosition.z);
             item.GetComponent<Collider2D>().enabled = true;
             SlotItem = item;
+            item.playSound();
         }
 
     }

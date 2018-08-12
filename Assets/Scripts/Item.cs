@@ -21,6 +21,8 @@ public class Item : MonoBehaviour
 
     private Cursor cursor;
 
+    private AudioSource sound;
+
 
     // Use this for initialization
     void Start()
@@ -28,7 +30,7 @@ public class Item : MonoBehaviour
 
         GameObject cursorObj = GameObject.FindGameObjectWithTag("Cursor");
         cursor = cursorObj.GetComponent<Cursor>();
-
+        sound = GetComponent<AudioSource>();
 
     }
 
@@ -81,6 +83,11 @@ public class Item : MonoBehaviour
     public string getDesc()
     {
         return description;
+    }
+
+    public void playSound()
+    {
+        sound.Play();
     }
 
 }
