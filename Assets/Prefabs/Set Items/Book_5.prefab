@@ -22,6 +22,7 @@ GameObject:
   - component: {fileID: 114507383627555290}
   - component: {fileID: 212045773466771900}
   - component: {fileID: 61305518792489168}
+  - component: {fileID: 114601829830951970}
   m_Layer: 8
   m_Name: Book_5
   m_TagString: Item
@@ -82,6 +83,17 @@ MonoBehaviour:
   value: 0
   description: Heavy. Part of a Set. Collect all 3 or worthless.
   SetName: 4
+--- !u!114 &114601829830951970
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1923388469357304}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5a5d34a9908d25349a9e109c49834b52, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!212 &212045773466771900
 SpriteRenderer:
   m_ObjectHideFlags: 1
