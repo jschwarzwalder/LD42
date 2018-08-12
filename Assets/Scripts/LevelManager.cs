@@ -49,6 +49,7 @@ public class LevelManager : MonoBehaviour {
 
     public void TitleScreen () {
         SceneManager.LoadScene("Title Screen");
+        Time.timeScale = 1;
     }
 
     public void ExitGame () {
