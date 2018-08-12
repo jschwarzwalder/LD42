@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class DisplayToolTip : MonoBehaviour
 {
@@ -9,13 +10,14 @@ public class DisplayToolTip : MonoBehaviour
     private Item displayItem;
     private string itemName;
     private string itemDesc;
-    private int itemValue;
+    private string itemValue;
     private Item currentItem;
 
     [SerializeField] SpriteRenderer iconPosition;
-    [SerializeField] Transform NameText;
-    [SerializeField] Transform ValueText;
-    [SerializeField] Transform DescText;
+    [SerializeField] Text toolTip;
+    //[SerializeField] Transform NameText;
+    //[SerializeField] Transform ValueText;
+    //[SerializeField] Transform DescText;
 
     // Use this for initialization
     void Start()
@@ -46,7 +48,13 @@ public class DisplayToolTip : MonoBehaviour
         }
 
         iconPosition.sprite = displayItem.GetComponent<SpriteRenderer>().sprite;
-        
+
+        string textToDisplay = "Name: " + itemName + "\n\n";
+        textToDisplay += "Value: " + itemValue + "\n\n";
+        textToDisplay += "Description: \n\n   " + itemDesc;
+
+        toolTip.text = textToDisplay;
+
 
 
     }
@@ -55,6 +63,6 @@ public class DisplayToolTip : MonoBehaviour
     {
         itemName = itemToDisplay.getName();
         itemDesc = itemToDisplay.getDesc();
-        itemValue = itemToDisplay.getValue();
+        itemValue = itemToDisplay.getValue().ToString();
     }
 }
