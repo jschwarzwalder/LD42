@@ -4,8 +4,12 @@ using UnityEngine;
 
 public class AlertWindow : MonoBehaviour {
 
+    private LevelManager gameManager;
+
 	// Use this for initialization
 	void Start () {
+	    gameManager = GameObject.FindGameObjectWithTag("Game Manager").GetComponent<LevelManager>();
+
 	    Open();
 	}
 	
@@ -17,10 +21,12 @@ public class AlertWindow : MonoBehaviour {
     public void Open () {
         gameObject.SetActive(true);
         Time.timeScale = 0;
+        gameManager.CanPause = false;
     }
 
     public void Close () {
         gameObject.SetActive(false);
         Time.timeScale = 1;
+        gameManager.CanPause = true;
     }
 }
