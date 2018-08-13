@@ -40,15 +40,18 @@ public class Inventory : MonoBehaviour
         {
             Items[index] = newItem;
             openSlots--;
+            Debug.Log("Add " + newItem);
             if (openSlots == 0) {
                 ScoreAll();
             }
         }
         else if (newItem == null) {
+            //Debug.Log("Remove " + Items[index]);
             Items[index] = null;
             openSlots++;
         }
 
+        //Debug.Log("open slots: " + openSlots);
     }
 
     public Item getItemAt(int row, int col)
