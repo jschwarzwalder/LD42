@@ -1,6 +1,5 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
-using UnityEditor;
 using UnityEngine;
 
 public class ItemsToCollect : MonoBehaviour
@@ -17,8 +16,7 @@ public class ItemsToCollect : MonoBehaviour
     private bool finished;
     private float prevSpawn;
     private Cursor cursor;
-
-    private ItemsRemaining bar;
+    
 
     // Use this for initialization
     void Start()
@@ -29,10 +27,6 @@ public class ItemsToCollect : MonoBehaviour
 
         GameObject cursorObj = GameObject.FindGameObjectWithTag("Cursor");
         cursor = cursorObj != null ? cursorObj.GetComponent<Cursor>() : null;
-
-        bar = GetComponentInChildren<ItemsRemaining>();
-        bar.MaxValue = itemPrefabs.Length;
-        bar.CurrentValue = itemPrefabs.Length;
 
     }
 
@@ -92,7 +86,6 @@ public class ItemsToCollect : MonoBehaviour
                 new_item.transform.position = startPosition.position;
                 itemsToPickup.AddLast(new_item);
                 prevSpawn = Time.time;
-                bar.CurrentValue = itemPrefabs.Length - current_index;
             }
 
         }
