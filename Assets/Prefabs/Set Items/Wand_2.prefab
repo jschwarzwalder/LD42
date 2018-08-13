@@ -81,7 +81,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemName: Wand
   value: 1
-  description: Used to cast Divine Spells. Limit 2 Wands
+  description: Used to cast Divine Spells. Limit 2 Wands or worth 0
   SetName: 5
 --- !u!114 &114257546883000484
 MonoBehaviour:

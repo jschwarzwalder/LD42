@@ -81,7 +81,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemName: Bow
   value: 1
-  description: Requires 3 Arrows to Sell
+  description: Requires at least 3 Arrows to Sell
   SetName: 2
 --- !u!114 &114528827505679422
 MonoBehaviour:

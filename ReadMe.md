@@ -1,5 +1,10 @@
-This project was made for Ludum Dare 42.
+This project was made for Ludum Dare 42. 
 Theme: Running out of Space
+
+Submission: https://ldjam.com/events/ludum-dare/42/inventory-wars
+
+Play online at itch.io https://saoigames.itch.io/inventory-wars
+
 
 Game Title: Inventory Wars.
 
