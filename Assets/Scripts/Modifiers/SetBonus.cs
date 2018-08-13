@@ -23,7 +23,7 @@ namespace Modifiers {
             }
 
             scorepad.IncrementSetCount(set.Value);
-            scorepad.IncreaseSetValue(set.Value, value);
+            scorepad.IncreaseSetValue(set.Value, value * (SetMultiplier - 1));
 
             if (scorepad.GetSetCount(set.Value) < SetSize) {
                 return value;
