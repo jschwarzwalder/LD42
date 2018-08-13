@@ -8,7 +8,7 @@ namespace Modifiers {
         public Type RangedType;
 
         public override int ValueMultiplier {
-            get { return 4; }
+            get { return 6; }
         }
 
         public override int GetSetValue (Scorepad scorepad)
