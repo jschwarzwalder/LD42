@@ -12,6 +12,7 @@ public class Inventory : MonoBehaviour
     [SerializeField] int columns;
     private int inventorySize;
     private int openSlots;
+    private bool scored;
 
     public int Rows { get { return rows; } }
     public int Columns { get { return columns; } }
@@ -90,12 +91,14 @@ public class Inventory : MonoBehaviour
     }
 
     public void ScoreAll() {
+        if (scored) return;
         Debug.Log("Score All");
         Scorepad scorepad = new Scorepad();
         for (int i = 0; i < inventorySize; i++)
         {
             ScoreAtIndex(i, scorepad);
         }
+        scored = true;
 
         GameObject gameManagerObj = GameObject.FindGameObjectWithTag("Game Manager");
         gameManagerObj.GetComponent<LevelManager>().EndGame(inventoryScore);
