@@ -35,6 +35,8 @@ public class ItemsToCollect : MonoBehaviour
         bar.MaxValue = itemPrefabs.Length;
         bar.CurrentValue = itemPrefabs.Length;
 
+        prevSpawn = -1 * delaySpawn;
+
     }
 
     // Update is called once per frame
@@ -104,11 +106,13 @@ public class ItemsToCollect : MonoBehaviour
     void MoveItems()
     {
         ArrayList itemsDone = new ArrayList();
+        
 
         foreach (GameObject item in itemsToPickup)
         {
             //speed * time = distance
             item.transform.position += new Vector3(itemSpeed * Time.deltaTime, 0, 0);
+            
 
             if (item.transform.position.x > endPosition.transform.position.x)
             {
