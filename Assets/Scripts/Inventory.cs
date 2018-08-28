@@ -2,6 +2,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class Inventory : MonoBehaviour
 {
@@ -102,6 +103,15 @@ public class Inventory : MonoBehaviour
 
         GameObject gameManagerObj = GameObject.FindGameObjectWithTag("Game Manager");
         gameManagerObj.GetComponent<LevelManager>().EndGame(inventoryScore);
+
+        //Save Score to Pref
+        int level = SceneManager.GetActiveScene().buildIndex;
+        int currentHighScore = PlayerPrefs.GetInt("Level" + level);
+        if (currentHighScore < inventoryScore)
+        {
+            PlayerPrefs.SetInt("Level" + level, inventoryScore);
+        }
+
     }
 
     void destroyItem(Item newItem, int row, int col)
