@@ -7,6 +7,9 @@ using UnityEngine.UI;
 public class LevelManager : MonoBehaviour {
 
     public GameObject ScoreScreen;
+    public GameObject NextLevelButton;
+    public GameObject RetryButton;
+    public int ScoreThreshold;
     public Text ScoreText;
     public bool CanPause = true;
     private bool paused;
@@ -39,6 +42,15 @@ public class LevelManager : MonoBehaviour {
     public void EndGame (int score) {
         Time.timeScale = 0;
         ScoreScreen.SetActive(true);
+        if (score > ScoreThreshold)
+        {
+            NextLevelButton.SetActive(true);
+            RetryButton.SetActive(false);
+        } else
+        {
+            NextLevelButton.SetActive(false);
+            RetryButton.SetActive(true);
+        }
         ScoreText.text = "" + score;
     }
 
@@ -54,5 +66,10 @@ public class LevelManager : MonoBehaviour {
 
     public void ExitGame () {
         Application.Quit();
+    }
+
+    public void Restart()
+    {
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
     }
 }
