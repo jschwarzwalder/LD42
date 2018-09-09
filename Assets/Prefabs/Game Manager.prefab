@@ -1760,7 +1760,7 @@ MonoBehaviour:
   ScoreScreen: {fileID: 1072097271190118}
   NextLevelButton: {fileID: 1274729843432472}
   RetryButton: {fileID: 1352344714342130}
-  ScoreThreshold: 10
+  ScoreThreshold: 4
   ScoreText: {fileID: 114738638825198784}
   CanPause: 1
   PauseMenu: {fileID: 1325615827072552}
@@ -2003,7 +2003,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Try Again?
+  m_Text: Restart Level
 --- !u!114 &114274689079758920
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -2457,7 +2457,7 @@ MonoBehaviour:
   m_FontData:
     m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
     m_FontSize: 300
-    m_FontStyle: 1
+    m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 3
     m_MaxSize: 300

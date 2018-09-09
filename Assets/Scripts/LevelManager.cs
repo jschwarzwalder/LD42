@@ -46,12 +46,19 @@ public class LevelManager : MonoBehaviour {
         {
             NextLevelButton.SetActive(true);
             RetryButton.SetActive(false);
-        } else
+            //ScoreText.color = new Color(0.936f, 0.7682264f, 0.5563019f,  1);
+            ScoreText.color = new Color(0.102942f, 0.774f, 0.3166863f,  1);
+            Debug.Log(ScoreText.color);
+        }
+        else
         {
             NextLevelButton.SetActive(false);
             RetryButton.SetActive(true);
+            ScoreText.color = new Color(0.786f, 0.1714135f, 0.115542f, 1);
+            Debug.Log(ScoreText.color);
         }
         ScoreText.text = "" + score;
+        Debug.Log(ScoreText.color);
     }
 
     public void NextLevel () {
